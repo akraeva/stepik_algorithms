@@ -9,7 +9,7 @@ def special_stack(count, command):
     test_result = ''
     for i in command:
         if max and i == 'max':
-            # test_result += str(max[-1]) + '\n'  
+            test_result += str(max[-1]) + '\n'
             print(max[-1])
         elif i == 'pop':
             if stack:
@@ -40,4 +40,3 @@ def test():
     ]
     for i in tests:
         print(i[3], special_stack(i[0], i[1].splitlines()) == i[2])
-
